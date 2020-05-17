@@ -14,35 +14,24 @@ public class Address {
         this.phone = phone;
     }
 
-    public String getPhone() {
-        return phone;
-    }
+    public String getPhone() {return phone;}
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+    public void setPhone(String phone) { this.phone = phone; }
 
-    public String getState() {
-        return state;
-    }
+    public String getState() { return state; }
 
-    public void setState(String state) {
-        this.state = state;
-    }
+    public void setState(String state) { this.state = state; }
 
-    public String getStreetAddress() {
-        return streetAddress;
-    }
+    public String getStreetAddress() { return streetAddress; }
 
-    public void setStreetAddress(String streetAddress) {
-        this.streetAddress = streetAddress;
-    }
+    public void setStreetAddress(String streetAddress) { this.streetAddress = streetAddress; }
 
-    public int getZipCode() {
-        return zipCode;
-    }
+    public int getZipCode() { return zipCode; }
 
-    public void setZipCode(int zipCode) {
-        this.zipCode = zipCode;
+    public void setZipCode(int zipCode) { this.zipCode = zipCode; }
+
+    @Override
+    public String toString() {
+        return "\n" + streetAddress + "\n" + state + "\n" + zipCode + "\n" + phone;
     }
 }
